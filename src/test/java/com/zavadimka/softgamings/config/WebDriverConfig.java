@@ -2,8 +2,10 @@ package com.zavadimka.softgamings.config;
 
 import org.aeonbits.owner.Config;
 
+@Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
-        "classpath:${driver}.properties"
+        "system:properties",
+        "classpath:config/${driver}.properties"
 })
 public interface WebDriverConfig extends Config {
 
@@ -12,17 +14,14 @@ public interface WebDriverConfig extends Config {
     String getBaseUrl();
 
     @Key("browser")
-    @DefaultValue("chrome")
     String getBrowser();
 
     @Key("browserVersion")
-    @DefaultValue("122.0")
     String getBrowserVersion();
 
     @Key("remoteUrl")
     String getRemoteUrl();
 
     @Key("browserSize")
-    @DefaultValue("1920x1080")
     String getBrowserSize();
 }

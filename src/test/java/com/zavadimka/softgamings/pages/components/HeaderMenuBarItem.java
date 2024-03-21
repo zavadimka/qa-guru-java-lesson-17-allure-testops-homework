@@ -1,12 +1,10 @@
 package com.zavadimka.softgamings.pages.components;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvValidationException;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.Assertions;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -80,8 +78,8 @@ public class HeaderMenuBarItem {
         return menuItemsList;
     }
 
-    @Step("Header MenuBar links opening")
-    public void headerMenuBarLinksOpeningTest(ArrayList<HeaderMenuBarItem>[] headerMenuBar) {
+    @Step("### Header MenuBar links opening test")
+    public HeaderMenuBarItem headerMenuBarLinksOpeningTest(ArrayList<HeaderMenuBarItem>[] headerMenuBar) {
         for (int i = 7; i >= 0; i--) {
             HeaderMenuBarItem tempItem = headerMenuBar[i].get(0);
             tempItem.itemSelector.hover();
@@ -103,10 +101,12 @@ public class HeaderMenuBarItem {
                 assertEquals(expectedUrl, currentUrl);
             }
         }
+
+        return this;
     }
 
-    @Step("Header MenuBar headers and links verification")
-    public void headerMenuBarVerification(ArrayList<HeaderMenuBarItem>[] headerMenuBar) {
+    @Step("### Header MenuBar titles and links verification")
+    public HeaderMenuBarItem headerMenuBarVerification(ArrayList<HeaderMenuBarItem>[] headerMenuBar) {
         for (int i = 0; i < 8; i++) {
             HeaderMenuBarItem tempItem = headerMenuBar[i].get(0);
             tempItem.itemSelector.hover();
@@ -122,6 +122,8 @@ public class HeaderMenuBarItem {
                 item.itemSelector.shouldBe(exist).shouldHave(text(item.itemText)).shouldHave(Condition.href(url));
             }
         }
+
+        return this;
     }
 
     public void printMenuBar(ArrayList<HeaderMenuBarItem>[] menuBar) {
