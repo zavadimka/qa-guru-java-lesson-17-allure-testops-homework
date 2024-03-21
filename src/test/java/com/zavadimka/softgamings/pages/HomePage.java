@@ -2,21 +2,19 @@ package com.zavadimka.softgamings.pages;
 
 import com.codeborne.selenide.SelenideElement;
 
-import com.opencsv.exceptions.CsvValidationException;
-import com.zavadimka.softgamings.pages.components.HeaderMenuBarItem;
 import com.zavadimka.softgamings.pages.components.PageSection;
 import io.qameta.allure.Step;
+import org.junit.jupiter.api.Assertions;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
+import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.$;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class HomePage {
     public final String pageLabel = "Home Page";
-    private final String homePageTitle = "SoftGamings | Создать свое онлайн казино — софт и готовые интернет казино";
+    public final String homePageTitle = "SoftGamings | Создать свое онлайн казино — софт и готовые интернет казино";
 
     private final ArrayList<String> pageSectionLabels = new ArrayList<>();
     private final ArrayList<SelenideElement> pageSectionSelectors = new ArrayList<>();
@@ -50,21 +48,24 @@ public class HomePage {
         pageSectionHeaders.add("Отзывы клиентов и партнёров");
     }
 
+    @Step("### Open Home Page")
+    public HomePage openPage() {
+        open(baseUrl);
 
-    @Step("Open Home Page")
-    public void openPage() {
-        open("/");
+        return this;
     }
 
-    @Step("Check Home Page title")
-    public void checkTitle() {
-        assertEquals(homePageTitle, title());
+    @Step("### Verify Home Page title: {0}")
+    public HomePage checkTitle(String homePageTitle) {
+        Assertions.assertEquals(homePageTitle, title());
+
+        return this;
     }
 
-    @Step("Check the Home Page section headers")
-    public void checkPageSectionHeaders() {
+    @Step("### Check Page section headers: " + pageLabel)
+    public HomePage checkPageSectionHeaders() {
         PageSection.checkPageSectionHeaders(homePageSections);
+
+        return this;
     }
-
-
 }

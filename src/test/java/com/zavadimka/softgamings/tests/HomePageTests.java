@@ -13,11 +13,12 @@ public class HomePageTests extends TestBase {
 
     @Test
     @DisplayName("Testing of Home Page opening")
-    @Story("Testing the opening of the Home Page and and verifying header menubar and Home Page sections headers")
+    @Story("Testing the opening of the Home Page and verifying Home Page title")
     @Severity(SeverityLevel.CRITICAL)
     void homePageOpenTest() {
 
-        steps.openHomePage();
+        homePage.openPage()
+                .checkTitle(homePage.homePageTitle);
     }
 
     @Test
@@ -25,17 +26,19 @@ public class HomePageTests extends TestBase {
     @Story("Verifying Home Page sections headers")
     @Severity(SeverityLevel.CRITICAL)
     void homePageSectionsHeadersTest() {
-        steps.openHomePage();
-        steps.checkPageSectionHeaders();
+
+        homePage.openPage()
+                .checkPageSectionHeaders();
     }
 
     @Test
     @DisplayName("Testing of Home Page header menubar")
-    @Story("Verifying header menubar titles and links opening")
+    @Story("Verifying header menubar titles and links opening test")
     @Severity(SeverityLevel.CRITICAL)
     void homePageHeaderMenuBarTest() {
-        steps.openHomePage();
-        steps.checkHeaderMenuBarFields();
-        steps.checkHeaderMenuBarLinksOpening();
+        homePage.openPage();
+
+        headerMenuBarItem.headerMenuBarVerification(headerMenuBar)
+                .headerMenuBarLinksOpeningTest(headerMenuBar);
     }
 }

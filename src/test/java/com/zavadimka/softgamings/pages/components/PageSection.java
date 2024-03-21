@@ -32,7 +32,7 @@ public class PageSection {
         return PageSections;
     }
 
-    @Step("Check the {label} section headers")
+    @Step("Check the Page section headers")
     public static void checkPageSectionHeaders(ArrayList<PageSection> pageSections) {
         for (PageSection section : pageSections){
             section.headerSelector.shouldBe(visible).shouldHave(text(section.headerText));
