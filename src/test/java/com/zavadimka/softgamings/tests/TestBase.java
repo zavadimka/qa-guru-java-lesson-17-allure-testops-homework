@@ -70,7 +70,7 @@ public class TestBase {
     }
 
     private static void createWebDriverConfig() {
-        String driver = System.getProperty("driver", "local");
+        String driver = System.getProperty("driver", "remote");
         System.setProperty("driver", driver);
 
         WebDriverProvider.setDriverConfig();
