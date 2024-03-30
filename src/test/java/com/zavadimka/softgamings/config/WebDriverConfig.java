@@ -9,19 +9,19 @@ import org.aeonbits.owner.Config;
 })
 public interface WebDriverConfig extends Config {
 
-    @Key("baseUrl")
+    @Key("base_url")
     @DefaultValue("https://www.softgamings.com/ru/")
     String getBaseUrl();
 
     @Key("browser")
     String getBrowser();
 
-    @Key("browserVersion")
+    @Key("browser_version")
     String getBrowserVersion();
 
-    @Key("remoteUrl")
-    String getRemoteUrl();
-
-    @Key("browserSize")
+    @Key("browser_size")
     String getBrowserSize();
+
+    @Key("remote_url")
+    String getRemoteUrl();
 }
