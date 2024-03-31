@@ -32,7 +32,7 @@ ____
     <a href="https://www.jenkins.io/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/zavadimka/qa-guru-java-lesson-17-allure-testops-homework/9497fcfc09c102cdb997fc8b944e23d735f5902b/media/icons/Jenkins.svg" alt="jenkins" height="30" width="30"/> </a> 
     <a href="https://allurereport.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/zavadimka/qa-guru-java-lesson-17-allure-testops-homework/9497fcfc09c102cdb997fc8b944e23d735f5902b/media/icons/Allure_Report.svg" alt="allurereport" height="30" width="30"/> </a> 
     <a href="https://qameta.io/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/zavadimka/qa-guru-java-lesson-17-allure-testops-homework/9497fcfc09c102cdb997fc8b944e23d735f5902b/media/icons/Allure_TestOps.svg" alt="alluretestops" height="30" width="30"/> </a> 
-    <a href="https://www.atlassian.com/software/jira" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/zavadimka/zavadimka/d7752c5e453307d9604abf6a8e76155f9338a14d/icons/Jira.svg" alt="jira" height="30" width="30"/> </a> 
+    <a href="https://www.atlassian.com/software/jira" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/zavadimka/qa-guru-java-lesson-17-allure-testops-homework/b49c3633c5b9b6286f709500e52307666c6820a2/media/icons/Jira.svg" alt="jira" height="30" width="30"/> </a> 
     <a href="https://telegram.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/zavadimka/qa-guru-java-lesson-17-allure-testops-homework/9497fcfc09c102cdb997fc8b944e23d735f5902b/media/icons/Telegram.svg" alt="telegram" height="30" width="30"/> </a> 
     <a href="https://www.jetbrains.com/idea/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/zavadimka/zavadimka/d7752c5e453307d9604abf6a8e76155f9338a14d/icons/IDEA.svg" alt="idea" width="30" height="30"/> </a> 
 </p>
@@ -137,7 +137,7 @@ ____
 
 ____
 <a id="jira"></a>
-## Jira. Выявление дефектов
+##     <a href="https://www.atlassian.com/software/jira" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/zavadimka/qa-guru-java-lesson-17-allure-testops-homework/b49c3633c5b9b6286f709500e52307666c6820a2/media/icons/Jira.svg" alt="jira" height="20" width="20"/> </a> Jira. Выявление дефектов
 Выполнена интеграция `Jira`. В задаче отражается информация  из Allure TestOps о результатах выполнения тестов и выявленных дефектах:
 <p align="center">
 <img title="Jira task" src="media/images/Jira_integration.JPG">
