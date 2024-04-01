@@ -130,7 +130,7 @@ ____
 ____
 <a id="allure-testops"></a>
 ## <a href="https://qameta.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/zavadimka/qa-guru-java-lesson-17-allure-testops-homework/9497fcfc09c102cdb997fc8b944e23d735f5902b/media/icons/Allure_TestOps.svg" alt="alluretestops" height="20" width="20"/> </a> Allure TestOps. Управление тестами
-Для управления тестированием, отслеживания результатов и анализа данных выполнена интеграция сборки `Jenkins` в [проект](https://allure.autotests.cloud/project/4150/dashboards) `Allure TestOps`:
+Для управления тестированием, отслеживания результатов и анализа данных выполнена интеграция сборки `Jenkins` в **[проект](https://allure.autotests.cloud/project/4150/dashboards)** `Allure TestOps`:
 <p align="center">
 <img title="Allure TestOps" src="media/images/Allure_TestOps.JPG">
 </p>
@@ -138,7 +138,7 @@ ____
 ____
 <a id="jira"></a>
 ##     <a href="https://www.atlassian.com/software/jira" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/zavadimka/qa-guru-java-lesson-17-allure-testops-homework/b49c3633c5b9b6286f709500e52307666c6820a2/media/icons/Jira.svg" alt="jira" height="20" width="20"/> </a> Jira. Выявление дефектов
-Выполнена интеграция `Jira`. В [задаче](https://jira.autotests.cloud/browse/HOMEWORK-1176) отражается информация  из Allure TestOps о результатах выполнения тестов и выявленных дефектах:
+Выполнена интеграция `Jira`. В **[задаче](https://jira.autotests.cloud/browse/HOMEWORK-1176)** отражается информация  из Allure TestOps о результатах выполнения тестов и созданы подзадачи для устранения выявленных дефектов:
 <p align="center">
 <img title="Jira task" src="media/images/Jira_integration.JPG">
 </p>
