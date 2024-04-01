@@ -10,7 +10,7 @@ import org.aeonbits.owner.Config;
 public interface WebDriverConfig extends Config {
 
     @Key("base_url")
-    @DefaultValue("https://www.softgamings.com/ru/")
+    @DefaultValue("https://www.softgamings.com/ru")
     String getBaseUrl();
 
     @Key("browser")
